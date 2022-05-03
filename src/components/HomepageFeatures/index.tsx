@@ -56,8 +56,13 @@ function Feature({ title, Svg, description }: FeatureItem) {
 }
 
 export default function HomepageFeatures(): JSX.Element {
-  const script = document.createElement('script')
-  script.innerText = `
+  let script = document.querySelector('#script')
+  if (script) {
+    return
+  }
+  script = document.createElement('script')
+  script.id = 'script'
+  script.innerHTML = `
   (function () {
     let div = document.createElement('div');
     div.id = 'CloudCourierContainer';
@@ -75,10 +80,12 @@ export default function HomepageFeatures(): JSX.Element {
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
   })();`
-  document.body.appendChild(script)
+  document.querySelector('body').appendChild(script)
   return (
     <section className={styles.features}>
       <div className='container'>
+        {/* {ScriptInit} */}
+
         <div className='row'>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

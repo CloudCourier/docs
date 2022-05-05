@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '云信客服',
   tagline: '插拔式客服系统',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://github.com/facebook/docusaurus',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -80,11 +80,11 @@ const config = {
             items: [
               {
                 label: 'We chat',
-                href: 'xxxx',
+                href: 'https://github.com/facebook/docusaurus',
               },
               {
                 label: 'bilibili',
-                href: 'xxxx',
+                href: 'https://github.com/facebook/docusaurus',
               }
             ],
           },

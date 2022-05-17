@@ -1,12 +1,12 @@
 import React from 'react'
-import clsx from 'clsx'
 import Layout from '@theme/Layout'
 import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import styles from './index.module.css'
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
-
+import cloudCourierCode from '../assets/img/cloudCourierCode.png'
+import cloudCourierPreview from '../assets/img/cloudCourierPreview.png'
 function Frame(): JSX.Element {
   if (ExecutionEnvironment.canUseDOM) {
     let script = document.querySelector('#script')
@@ -40,8 +40,18 @@ function Frame(): JSX.Element {
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext()
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={styles.heroBanner}>
       <div className='container'>
+        <div className={styles.preview}>
+          <img
+            src={cloudCourierCode}
+            alt='cloudCourierCode'
+          />
+          <img
+            src={cloudCourierPreview}
+            alt='cloudCourierPreview'
+          />
+        </div>
         <h1 className='hero__title'>{siteConfig.title}</h1>
         <p className='hero__subtitle'>{siteConfig.tagline}</p>
         <div className={styles.buttons}>

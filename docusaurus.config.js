@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo.svg',
+  favicon: 'img/logo.png',
   organizationName: 'CloudCourier', // Usually your GitHub org/user name.
   projectName: 'CloudCourier', // Usually your repo name.
 

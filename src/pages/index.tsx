@@ -5,8 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import styles from './index.module.css'
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
-import cloudCourierCode from '../assets/img/cloudCourierCode.png'
-import cloudCourierPreview from '../assets/img/cloudCourierPreview.png'
+import Plum from '@site/src/components/Plum'
 function Frame(): JSX.Element {
   if (ExecutionEnvironment.canUseDOM) {
     let script = document.querySelector('#script')
@@ -24,11 +23,12 @@ function Frame(): JSX.Element {
       div.style.setProperty('bottom', '0', 'important');
       let body = document.querySelector('body');
       body.appendChild(div);
+      window.__clour_courier_token__ = 'S3GSrXEWUoCZyeo3ARJ668_ogQnCGaVqCXXzRK4njsU=';
       var s1 = document.createElement('script'),
         s0 = document.getElementsByTagName('script')[0];
       s1.async = true;
       s1.src =
-        'https://www.zhangbaolin001.cn/upload/2022/05/CloudCourierInit-bd2daf834a7e44abb619ff1f98c998ae.js';
+        'https://cloudcourier.cn/scripts/deployscript.js';
       s1.charset = 'UTF-8';
       s1.setAttribute('crossorigin', '*');
       s0.parentNode.insertBefore(s1, s0);
@@ -42,16 +42,6 @@ function HomepageHeader() {
   return (
     <header className={styles.heroBanner}>
       <div className='container'>
-        <div className={styles.preview}>
-          <img
-            src={cloudCourierCode}
-            alt='cloudCourierCode'
-          />
-          <img
-            src={cloudCourierPreview}
-            alt='cloudCourierPreview'
-          />
-        </div>
         <h1 className='hero__title'>{siteConfig.title}</h1>
         <p className='hero__subtitle'>{siteConfig.tagline}</p>
         <div className={styles.buttons}>
@@ -77,7 +67,8 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext()
   return (
-    <Layout
+    <>
+     <Layout
       title={`Hello from ${siteConfig.title}`}
       description='Description will go into a meta tag in <head />'
     >
@@ -87,5 +78,8 @@ export default function Home(): JSX.Element {
         <HomepageFeatures />
       </main>
     </Layout>
+    <Plum />
+    </>
+   
   )
 }

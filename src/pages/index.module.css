@@ -8,7 +8,6 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(140deg, rgb(165, 142, 251), rgb(233, 191, 248));
 }
 
 @media screen and (max-width: 996px) {
@@ -22,18 +21,3 @@
   align-items: center;
   justify-content: center;
 }
-.preview {
-  display: flex;
-  margin: 0 auto;
-  width: 90%;
-  justify-content: center;
-}
-.preview img {
-  object-fit: cover;
-  object-position: center center;
-  height: 500px;
-}
-/* 
-.preview img:nth-child(2) {
-  height: 500px;
-} */

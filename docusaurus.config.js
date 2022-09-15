@@ -57,7 +57,7 @@ const config = {
           },
           {to: '/blog', label: '博客', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/CloudCourier',
             label: 'GitHub',
             position: 'right',
           },
@@ -79,12 +79,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'We chat',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-              {
                 label: 'bilibili',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://space.bilibili.com/519295997?spm_id_from=333.1007.0.0',
               }
             ],
           },
@@ -97,7 +93,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/CloudCourier',
               },
             ],
           },

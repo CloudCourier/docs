@@ -30,7 +30,6 @@ function Frame(): JSX.Element {
       s1.src =
         'https://cloudcourier.cn/scripts/deployscript.js';
       s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
       s0.parentNode.insertBefore(s1, s0);
     })();`
     document.querySelector('body').appendChild(script)
@@ -56,7 +55,7 @@ function HomepageHeader() {
             to='/docs/intro'
             style={{ marginLeft: '10px' }}
           >
-            视频教程
+            视频教程正在录制中
           </Link>
         </div>
       </div>

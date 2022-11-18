@@ -5,7 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import styles from './index.module.css'
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
-import Plum from '@site/src/components/Plum'
+
 function Frame(): JSX.Element {
   if (ExecutionEnvironment.canUseDOM) {
     let script = document.querySelector('#script')
@@ -77,7 +77,6 @@ export default function Home(): JSX.Element {
         <HomepageFeatures />
       </main>
     </Layout>
-    <Plum />
     </>
    
   )
